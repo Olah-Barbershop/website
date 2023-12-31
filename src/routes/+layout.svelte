@@ -40,6 +40,7 @@
 </script>
 
 <svelte:head>
+  <meta name="google-site-verification" content="VSgLH2cb_vLXqlGC7dA2zyafU-AvTltrHtxnsXMeYSk" />
   <title>Oláh Barbershop</title>
 </svelte:head>
 
