@@ -11,7 +11,7 @@ body {
    translate: -50% -50%;
 }
 
-p {
+p.word {
     color: white;
     font-size: 4vw;
     font-family: 'Rubik', sans-serif;
@@ -20,7 +20,7 @@ p {
 }
 
 @media(max-width:700px) {
-  p {
+  p.word {
     font-size: 6vw;
   }
 }

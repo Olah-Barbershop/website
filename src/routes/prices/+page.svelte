@@ -13,14 +13,20 @@
 
 <h1>Prices</h1>
 
-<h2>The prices are as following</h2>
-
 {#await getPrices()}
   <p>Loading...</p>
-{:then posts}
-  <pre>
-    {JSON.stringify(posts, null, 2)}
-  </pre>
+{:then prices}
+  <h2>The prices are as following</h2>
+  <br>
+  
+  {#each prices as { name, amount }}
+    <ul>
+      <li>
+        <p><strong>{name}: </strong>
+        {amount}Ft</p>
+      </li>
+    </ul>
+  {/each}
 {:catch error}
   <p>{error.message}</p>
 {/await}
