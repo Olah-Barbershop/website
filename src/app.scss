@@ -36,7 +36,11 @@ body {
     padding: 12px 20px;
 }
 
-.logo img {width: 40px;}
+.logo, .logo img {
+  width: 6vh;
+  height: 6vh;
+}
+
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 
@@ -49,6 +53,7 @@ body {
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 2.1vh;
 }
 
 .open-menu , .close-menu {

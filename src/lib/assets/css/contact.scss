@@ -36,23 +36,26 @@ a {
 
 .fancy > .letter {
     display: inline-block;
-    transition: transform .35s ease;
+    transition: transform .35s ease-in-out;
 }
 
 .fancy:hover > .letter {
     transition-duration: .8s;
 }
 
+.normal, .fancy {
+  transition: opacity .3s ease-in-out;
+}
+
 .text:hover {
   .normal, .fancy {
     opacity: 0.2;
-    transition: opacity .3s ease-in-out;
   }
 }
 
 .fancy:hover {
     opacity: 1 !important;
-    transition: opacity 0s !important;
+    transition: opacity 0s  ease-in-out !important;
 }
 
 .fancy:hover > .letter:nth-child(1) {
