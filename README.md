@@ -3,10 +3,11 @@
     <h1 align="center">Oláh Barbershop website</h1>
 </p>
 
-#### The official website for Oláh Barbershop, available [here](https://web.olahbarbershop.codes), hosted by GitHub Pages
+#### The official website for Oláh Barbershop, built using SvelteKit, hosted by [GitHub Pages](https://web.olahbarbershop.codes)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/Olah-Barbershop/website/deploy.yml)](https://github.com/Olah-Barbershop/website/actions)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/Olah-Barbershop/website/dev/%40sveltejs/kit/master)](https://www.npmjs.com/package/@sveltejs/kit)
 
 # Bugs and feature requests
 Either create an [issue](https://github.com/Olah-Barbershop/website/issues/new/choose), or a [pull request](https://github.com/Olah-Barbershop/website/pulls)
