@@ -6,6 +6,7 @@
 #### The official website for Oláh Barbershop, available [here](https://web.olahbarbershop.codes), hosted by GitHub Pages
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/Olah-Barbershop/website/deploy.yml)](https://github.com/Olah-Barbershop/website/actions)
 
 # Bugs and feature requests
 Either create an [issue](https://github.com/Olah-Barbershop/website/issues/new/choose), or a [pull request](https://github.com/Olah-Barbershop/website/pulls)
