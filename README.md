@@ -24,8 +24,8 @@ Contacts page:
 - Won't be changing any time soon
 - Maybe I should add our [Threads](https://threads.net/@olahbarbershop). I'll think about it
 
-Prices page:
-- Pretty self-explanatory
+Services page:
+- What we offer
 
 Locations page (Coming soon):
 - Our locations listed in a nice, modular format

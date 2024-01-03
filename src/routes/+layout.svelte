@@ -31,12 +31,12 @@
   onMount(() => {
     menuEffect('.home', 60)
     menuEffect('.contact', 30)
-    menuEffect('.prices', 45)
+    menuEffect('.services', 25)
   })
 
   const home = base + '/'
   const contact = base + '/contact'
-  const prices = base + '/prices'
+  const services = base + '/services'
 </script>
 
 <svelte:head>
@@ -52,7 +52,7 @@
       <span class="menu">
         <li><a href={home} class="home" data-value="Home">Home</a></li>
         <li><a href={contact} class="contact" data-value="Contact">Contact</a></li>
-        <li><a href={prices} class="prices" data-value="Prices">Prices</a></li>
+        <li><a href={services} class="services" data-value="Services">Services</a></li>
         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </span>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
