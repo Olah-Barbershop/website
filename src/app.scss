@@ -10,7 +10,6 @@ body {
   background-color: #121212;
   color: #fff;
   font-family: 'Rubik', sans-serif;
-  overflow: scroll;
 }
 
 .ii {
@@ -101,7 +100,7 @@ body {
 }
 
 .wave {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;

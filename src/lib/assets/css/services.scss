@@ -4,13 +4,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
 .service {
   width: calc(100% / 3 - 20px);
-  min-height: 22vh;
   font-size: 2vh !important;
   margin-right: 10px;
   margin-left: 10px;
