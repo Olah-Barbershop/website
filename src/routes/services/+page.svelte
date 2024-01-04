@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
+  import '$lib/assets/css/services.scss'
 
   type Service = {
     name: string,
@@ -30,17 +31,17 @@
 </script>
 
 {#if services}
-  <ul>
+  <div class="service-container">
     {#each services as { name, description, amount }}
-      <li>
+      <div class="service">
         <p><strong>{name}: </strong>
         {amount}Ft</p>
         <br>
         <p>{description}</p>
         <br>
-      </li>
+      </div>
     {/each}
-  </ul>
+  </div>
 {:else if error}
   <p>{error.message}</p>
 {:else}

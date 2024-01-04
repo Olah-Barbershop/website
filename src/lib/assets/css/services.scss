@@ -1,0 +1,22 @@
+.service-container {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: #000;
+  width: calc(100% / 3 - 20px);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-top: 25px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
