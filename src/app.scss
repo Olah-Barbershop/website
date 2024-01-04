@@ -10,6 +10,7 @@ body {
   background-color: #121212;
   color: #fff;
   font-family: 'Rubik', sans-serif;
+  min-height: 100dvh;
 }
 
 .ii {
@@ -26,6 +27,7 @@ body {
 
 .nav-bar {
   width: 100%;
+  height: 8.82dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,23 +102,24 @@ body {
 }
 
 .wave {
+  background-color: transparent;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 12vh;
+  height: 12dvh;
 }
 
 .wave.wave1 {
   background-image: url('$lib/assets/wave1.png');
-  background-size: 100vw 12vh;
+  background-size: 100vw 12dvh;
   z-index: 5;
   animation: move 5s linear infinite;
 }
 
 .wave.wave2 {
   background-image: url('$lib/assets/wave2.png');
-  background-size: 100vw 12vh;
+  background-size: 100vw 12dvh;
   z-index: 10;
   opacity: .65;
   animation: move 10s linear infinite;
@@ -124,7 +127,7 @@ body {
 
 .wave.wave3 {
   background-image: url('$lib/assets/wave3.png');
-  background-size: 100vw 12vh;
+  background-size: 100vw 12dvh;
   z-index: 15;
   opacity: .4;
   animation: move 15s linear infinite;

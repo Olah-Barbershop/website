@@ -27,28 +27,30 @@
 
 </script>
 
-{#if services}
-  <div class="service-container">
-    {#each services as { name, description, amount }}
-      <div class="service">
-        <p>
-          <i class={non1}></i>
-        </p>
-        <br>
-        <p>
-          <strong>{name}:</strong>
-        </p>
-        <p>
-          {amount}Ft
-        </p>
-        <br>
-        <p>{description}</p>
-        <br>
-      </div>
-    {/each}
-  </div>
-{:else if error}
-  <p>{error.message}</p>
-{:else}
-  <p>Loading...</p>
-{/if}
+<div class="container">
+  {#if services}
+    <div class="service-container">
+      {#each services as { name, description, amount }}
+        <div class="service">
+          <p>
+            <i class={non1}></i>
+          </p>
+          <br>
+          <p>
+            <strong>{name}:</strong>
+          </p>
+          <p>
+            {amount}Ft
+          </p>
+          <br>
+          <p>{description}</p>
+          <br>
+        </div>
+      {/each}
+    </div>
+  {:else if error}
+    <p>{error.message}</p>
+  {:else}
+    <p>Loading...</p>
+  {/if}
+</div>
