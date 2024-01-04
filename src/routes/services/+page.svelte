@@ -29,8 +29,12 @@
   <div class="service-container">
     {#each services as { name, description, amount }}
       <div class="service">
-        <p><strong>{name}: </strong>
-        {amount}Ft</p>
+        <p>
+          <strong>{name}:</strong>
+        </p>
+        <p>
+          {amount}Ft
+        </p>
         <br>
         <p>{description}</p>
         <br>
