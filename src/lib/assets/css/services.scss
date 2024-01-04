@@ -1,16 +1,17 @@
 .service-container {
   width: 70%;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 }
 
 .service {
-  background: #000;
   width: calc(100% / 3 - 20px);
+  min-height: 22vh;
+  font-size: 2vh !important;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 30px;
@@ -19,4 +20,7 @@
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  background-color: #121212;
+  border-radius: 2vh;
+  box-shadow: -12px -12px 28px #20202073, 12px 12px 20px #00000073;
 }

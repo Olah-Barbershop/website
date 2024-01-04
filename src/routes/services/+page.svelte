@@ -23,11 +23,6 @@
     }
   })
 
-  /*async function getServices() {
-    const results = await fetch('https://olahbarbershop.codes/services')
-    const services: Service[] = await results.json()
-    return services
-  }*/
 </script>
 
 {#if services}
