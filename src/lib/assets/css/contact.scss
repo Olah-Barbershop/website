@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
-    background: #121212;
+  background: #121212;
 }
 
 .text {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   translate: -50% -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 p.word {
-    color: white;
-    font-size: 4vw;
-    font-family: 'Rubik', sans-serif;
-    margin: 0rem;
-    text-transform: uppercase;
+  color: white;
+  font-size: 4vw;
+  margin: 0rem;
+  text-transform: uppercase;
 }
 
 @media(max-width:700px) {
@@ -26,21 +25,21 @@ p.word {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .line {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .fancy > .letter {
-    display: inline-block;
-    transition: transform .35s ease-in-out;
+  display: inline-block;
+  transition: transform .35s ease-in-out;
 }
 
 .fancy:hover > .letter {
-    transition-duration: .8s;
+  transition-duration: .8s;
 }
 
 .normal, .fancy {
@@ -54,58 +53,58 @@ a {
 }
 
 .fancy:hover {
-    opacity: 1 !important;
-    transition: opacity 0s  ease-in-out !important;
+  opacity: 1 !important;
+  transition: opacity 0s  ease-in-out !important;
 }
 
 .fancy:hover > .letter:nth-child(1) {
-    transform: translate(-80%, 60%) rotate(8deg);
+  transform: translate(-80%, 60%) rotate(8deg);
 }
 
 .fancy:hover > .letter:nth-child(2) {
-    transform: translate(-40%, 20%) rotate(4deg);
+  transform: translate(-40%, 20%) rotate(4deg);
 }
 
 .fancy:hover > .letter:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+  transform: translate(-10%, 60%) rotate(-6deg);
 }
 
 .fancy:hover > .letter:nth-child(4) {
-    transform: translate(0%, 8%) rotate(-8deg);
+  transform: translate(0%, 8%) rotate(-8deg);
 }
 
 .fancy:hover > .letter:nth-child(5) {
-    transform: translate(0%, -20%) rotate(5deg);
+  transform: translate(0%, -20%) rotate(5deg);
 }
 
 .fancy:hover > .letter:nth-child(6) {
-    transform: translate(0%, 20%) rotate(-3deg);
+  transform: translate(0%, 20%) rotate(-3deg);
 }
 
 .fancy:hover > .letter:nth-child(7) {
-    transform: translate(0%, -40%) rotate(-5deg);
+  transform: translate(0%, -40%) rotate(-5deg);
 }
 
 .fancy:hover > .letter:nth-child(8) {
-    transform: translate(0%, 15%) rotate(10deg);
+  transform: translate(0%, 15%) rotate(10deg);
 }
 
 .fancy:hover > .letter:nth-child(9) {
-    transform: translate(0%, -50%) rotate(8deg);
+  transform: translate(0%, -50%) rotate(8deg);
 }
 
 .fancy:hover > .letter:nth-child(10) {
-    transform: translate(0%, 15%) rotate(-6deg);
+  transform: translate(0%, 15%) rotate(-6deg);
 }
 
 .fancy:hover > .letter:nth-child(11) {
-    transform: translate(50%, -10%) rotate(-3deg);
+  transform: translate(50%, -10%) rotate(-3deg);
 }
 
 .fancy:hover > .letter:nth-child(12) {
-    transform: translate(120%, 27%) rotate(-18deg);
+  transform: translate(120%, 27%) rotate(-18deg);
 }
 
 .fancy:hover > .letter:nth-child(13) {
-    transform: translate(0%, -50%) rotate(8deg);
+  transform: translate(0%, -50%) rotate(8deg);
 }
