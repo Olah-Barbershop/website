@@ -22,9 +22,6 @@
       error = err
     }
   })
-
-  const non1 = 'fa-sharp fas fa-scissors'
-
 </script>
 
 <div class="container">
@@ -33,7 +30,7 @@
       {#each services as { name, description, amount }}
         <div class="service">
           <p>
-            <i class={non1}></i>
+            <i class="fa-sharp fas fa-scissors"></i>
           </p>
           <br>
           <p>
