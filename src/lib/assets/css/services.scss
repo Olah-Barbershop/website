@@ -16,8 +16,6 @@
 }
 
 .service {
-  font-size: 2.2vh !important;
-  min-height: 30vh;
   margin: 30px 10px;
   padding: 10px;
   padding-top: 25px;
@@ -50,6 +48,12 @@
 
 @media (min-width: 768px) and (max-width: 1079px) {
   .service {
-    font-size: 2vw !important;
+    font-size: 1.6vw !important;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1279px) {
+  .service {
+    font-size: 1.4vw !important;
   }
 }
