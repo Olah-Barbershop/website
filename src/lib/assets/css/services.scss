@@ -7,16 +7,16 @@
 }
 
 .service-container {
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
   display: grid;
-  grid-template-columns: repeat(3, minmax(calc(70vw / 3), 1fr));
+  grid-template-columns: repeat(3, minmax(calc(76vw / 3), 1fr));
   overflow: scroll;
   height: calc(90dvh - 8.82dvh);
 }
 
 .service {
-  margin: 30px 10px;
+  margin: 30px 15px;
   padding: 10px;
   padding-top: 25px;
   display: inline-block;
@@ -28,7 +28,7 @@
 
 @media (max-width: 479px) {
   .service-container {
-    grid-template-columns: repeat(1, minmax(70vw, 1fr));
+    grid-template-columns: repeat(1, minmax(76vw, 1fr));
   }
 
   .service {
