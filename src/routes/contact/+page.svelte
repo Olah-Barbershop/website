@@ -20,8 +20,9 @@
 
   onMount(() => {
     letterise(".tel");
-    letterise(".mail");
     letterise(".insta");
+    letterise(".threads");
+    letterise(".dev");
   })
 </script>
 
@@ -37,16 +38,21 @@
     </div>
     <div class="line">
         <a href="tel:+36208026216">
-            <p class="fancy word tel"><span class="letter">0</span><span class="letter">6</span><span class="letter">(</span><span class="letter">2</span><span class="letter">0</span><span class="letter">)</span><span class="letter">8</span><span class="letter">0</span><span class="letter">2</span><span class="letter">6</span><span class="letter">2</span><span class="letter">1</span><span class="letter">6</span></p>
+            <p class="fancy word tel">06(20)8026216</p>
         </a>
     </div>
     <div class="line">
-        <a href="mailto:olahbarbershop@gmail.com" target="_blank">
-            <p class="fancy word mail"><span class="letter">➞</span><span class="letter">E</span><span class="letter">M</span><span class="letter">A</span><span class="letter">I</span><span class="letter">L</span></p>
-        </a>
-        <a href="https://instagram.com/olahbarbershop" target="_blank">
-            <p class="fancy word insta"><span class="letter">➞</span><span class="letter">I</span><span class="letter">N</span><span class="letter">S</span><span
-class="letter">T</span><span class="letter">A</span></p>
-        </a>
+      <a href="https://instagram.com/olahbarbershop" target="_blank">
+        <p class="fancy word insta">➞Insta</p>
+      </a>
+      <a href="https://dev.to/olahbarbershop" target="_blank">
+        <p class="fancy word dev">➞DEV</p>
+      </a>
+    </div>
+    <div class="line">
+      <a href="https://threads.net/@olahbarbershop" target="_blank">
+        <p class="fancy word threads">➞Threads.net</p>
+      </a>
+      
     </div>
 </div>
