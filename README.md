@@ -23,7 +23,7 @@ Home page:
 
 Contacts page:
 - Won't be changing any time soon
-- Maybe I should add our [Threads](https://threads.net/@olahbarbershop). I'll think about it
+- ~~Maybe I should add our [Threads](https://threads.net/@olahbarbershop). I'll think about it~~ Done✅
 
 Services page:
 - What we offer
