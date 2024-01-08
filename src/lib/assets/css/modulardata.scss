@@ -3,12 +3,13 @@ $min-font: 16px;
 $desired-font: 1vw;
 
 .container {
-  height: calc(90dvh - 8.82dvh);
+  height: calc(90dvh - 8dvh);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   width: 100vw;
+  z-index: 100;
 }
 
 .location-container, .service-container {
@@ -16,8 +17,9 @@ $desired-font: 1vw;
   display: grid;
   grid-template-columns: repeat(3, minmax(calc(76vw / 3), 1fr));
   overflow: scroll;
-  height: calc(90dvh - 8.82dvh);
+  height: calc(90dvh - 8dvh);
   align-items: center;
+  justify-items: center;
 }
 
 .location-container {
@@ -49,13 +51,20 @@ $desired-font: 1vw;
 }
 
 .line {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 479px) {
   .service-container {
-    grid-template-columns: repeat(1, minmax(76vw, 1fr));
+    grid-template-columns: minmax(76vw, 1fr);
+  }
+}
+
+@media (max-width: 619px) {
+  .location-container {
+    grid-template-columns: minmax(76vw, 1fr);
   }
 }
 

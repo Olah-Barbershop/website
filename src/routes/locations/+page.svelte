@@ -30,7 +30,7 @@
 <div class="container">
   {#if locations}
     <div class="location-container">
-      {#each locations as { address, phoneNumber, email, mondayToThursday, friday, saturdayToSunday }}
+      {#each locations as { address, phoneNumber, mondayToThursday, friday, saturdayToSunday }}
         <div class="location">
           <p>{address}</p>
           <p>{phoneNumber}</p>
