@@ -39,8 +39,8 @@ $desired-font: 1vw;
 .location {
   margin: 30px 15px;
   font-size: clamp($min-font, $desired-font, $max-font);
-  padding: 10px;
-  padding-top: 25px;
+  padding: 25px;
+  line-height: 1.6;
   display: inline-block;
   text-align: left;
   background-color: #121212;

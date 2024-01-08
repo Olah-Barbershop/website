@@ -5,7 +5,6 @@
   type Location = {
     address: string,
     phoneNumber: string,
-    email: string,
     mondayToThursday: string,
     friday: string,
     saturdayToSunday: string
@@ -35,7 +34,6 @@
         <div class="location">
           <p>{address}</p>
           <p>{phoneNumber}</p>
-          <p>{email}</p>
           <br>
           <p><strong>Business hours:</strong></p>
           <div class="line">
