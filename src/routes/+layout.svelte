@@ -36,11 +36,10 @@
     menuEffect('.locations', 25)
   })
 
+  let checked: Boolean
+
   const closeCheckBox = () => {
-    const checkBox = document.querySelector('input#check')
-    if (checkBox.checked) {
-      checkBox.checked = false
-    }
+    checked ? checked = false : true
   }
 
   $: if($navigating) closeCheckBox()
@@ -60,7 +59,7 @@
   <nav>
     <ul class="nav-bar">
      <li class="logo"><img src={icon} alt="logo"></li>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" bind:checked>
       <span class="menu">
         <li><a href={home} class="home" data-value="Home">Home</a></li>
         <li><a href={contact} class="contact" data-value="Contact">Contact</a></li>
