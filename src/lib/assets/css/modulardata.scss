@@ -11,13 +11,17 @@ $desired-font: 1vw;
   width: 100vw;
 }
 
-.service-container {
-  padding-left: 12vw;
-  padding-right: 12vw;
+.location-container, .service-container {
+  padding: 0 12vw;
   display: grid;
   grid-template-columns: repeat(3, minmax(calc(76vw / 3), 1fr));
   overflow: scroll;
   height: calc(90dvh - 8.82dvh);
+  align-items: center;
+}
+
+.location-container {
+  grid-template-columns: repeat(2, minmax(calc(38vw), 1fr));
 }
 
 .service {
@@ -30,6 +34,23 @@ $desired-font: 1vw;
   background-color: #121212;
   border-radius: 2vh;
   box-shadow: -12px -12px 28px #20202073, 12px 12px 20px #00000073;
+}
+
+.location {
+  margin: 30px 15px;
+  font-size: clamp($min-font, $desired-font, $max-font);
+  padding: 10px;
+  padding-top: 25px;
+  display: inline-block;
+  text-align: left;
+  background-color: #121212;
+  border-radius: 2vh;
+  box-shadow: -12px -12px 28px #20202073, 12px 12px 20px #00000073;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 479px) {

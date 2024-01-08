@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
-  import '$lib/assets/css/services.scss'
+  import '$lib/assets/css/modulardata.scss'
 
   type Service = {
     name: string,
@@ -15,7 +15,7 @@
     try {
       const results = await fetch('https://olahbarbershop.codes/services')
       if (!results.ok) {
-        throw new Error('Network respone was not ok');
+        throw new Error('Network respone was not OK');
       }
       services = await results.json()
     } catch (err) {

@@ -32,11 +32,13 @@
     menuEffect('.home', 60)
     menuEffect('.contact', 30)
     menuEffect('.services', 25)
+    menuEffect('.locations', 25)
   })
 
   const home = base + '/'
   const contact = base + '/contact'
   const services = base + '/services'
+  const locations = base + '/locations'
 </script>
 
 <svelte:head>
@@ -53,6 +55,7 @@
         <li><a href={home} class="home" data-value="Home">Home</a></li>
         <li><a href={contact} class="contact" data-value="Contact">Contact</a></li>
         <li><a href={services} class="services" data-value="Services">Services</a></li>
+        <li><a href={locations} class="locations" data-value="Locations">Locations</a></li>
         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </span>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
