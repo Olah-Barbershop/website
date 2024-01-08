@@ -1,9 +1,14 @@
+$max-font: 32px;
+$min-font: 16px;
+$desired-font: 1vw;
+
 .container {
   height: calc(90dvh - 8.82dvh);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100vw;
 }
 
 .service-container {
@@ -17,6 +22,7 @@
 
 .service {
   margin: 30px 15px;
+  font-size: clamp($min-font, $desired-font, $max-font) !important;
   padding: 10px;
   padding-top: 25px;
   display: inline-block;
@@ -30,30 +36,10 @@
   .service-container {
     grid-template-columns: repeat(1, minmax(76vw, 1fr));
   }
-
-  .service {
-    font-size: 4vw !important;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .service-container {
-    grid-template-columns: repeat(2, minmax(35vw, 1fr));
-  }
-
-  .service {
-    font-size: 2.3vw !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1079px) {
-  .service {
-    font-size: 1.6vw !important;
-  }
-}
-
-@media (min-width: 1080px) and (max-width: 1279px) {
-  .service {
-    font-size: 1.4vw !important;
+    grid-template-columns: repeat(2, minmax(38vw, 1fr));
   }
 }
