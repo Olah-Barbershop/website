@@ -3,6 +3,7 @@
   import '../app.scss'
   import { onMount } from 'svelte'
   import { base } from '$app/paths'
+  import { navigating } from '$app/stores'
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -34,6 +35,15 @@
     menuEffect('.services', 25)
     menuEffect('.locations', 25)
   })
+
+  const closeCheckBox = () => {
+    const checkBox = document.querySelector('input#check')
+    if (checkBox.checked) {
+      checkBox.checked = false
+    }
+  }
+
+  $: if($navigating) closeCheckBox()
 
   const home = base + '/'
   const contact = base + '/contact'
