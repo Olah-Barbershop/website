@@ -36,15 +36,15 @@
           <p>{phoneNumber}</p>
           <br>
           <p><strong>Business hours:</strong></p>
-          <div class="line">
+          <div class="business-hours-line">
             <p>Monday to Thursday: </p>
             <p>{mondayToThursday}</p>
           </div>
-          <div class="line">
+          <div class="business-hours-line">
             <p>Friday: </p>
             <p>{friday}</p>
           </div>
-          <div class="line">
+          <div class="business-hours-line">
             <p>Saturday to Sunday: </p>
             <p>{saturdayToSunday}</p>
           </div>
