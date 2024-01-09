@@ -11,7 +11,7 @@
   }
 
   let locations: Location[]
-  let error
+  let error: Error
 
   onMount(async () => {
     try {

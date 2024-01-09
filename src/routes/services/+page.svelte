@@ -9,7 +9,7 @@
   }
   
   let services: Service[]
-  let error
+  let error: Error
 
   onMount(async () => {
     try {
