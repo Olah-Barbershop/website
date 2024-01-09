@@ -28,7 +28,7 @@ Contacts page:
 Services page:
 - What we offer
 
-Locations page (Coming soon):
+Locations page:
 - Our locations listed in a nice, modular format
 
 # Running, building
