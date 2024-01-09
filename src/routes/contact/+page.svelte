@@ -19,7 +19,7 @@
   };
 
   onMount(() => {
-    letterise(".tel");
+    letterise(".email");
     letterise(".insta");
     letterise(".threads");
     letterise(".dev");
@@ -37,22 +37,19 @@
         <p class="word normal">▼</p>
     </div>
     <div class="line">
-        <a href="tel:+36208026216">
-            <p class="fancy word tel">06(20)8026216</p>
-        </a>
-    </div>
-    <div class="line">
-      <a href="https://instagram.com/olahbarbershop" target="_blank">
-        <p class="fancy word insta">➞Insta</p>
+      <a href="mailto:contact@olahbarbershop.codes" target="_blank">
+        <p class="fancy word email">Email</p>
       </a>
-      <a href="https://dev.to/olahbarbershop" target="_blank">
-        <p class="fancy word dev">➞DEV</p>
+      <a href="https://instagram.com/olahbarbershop" target="_blank">
+        <p class="fancy word insta">Insta</p>
       </a>
     </div>
     <div class="line">
       <a href="https://threads.net/@olahbarbershop" target="_blank">
-        <p class="fancy word threads">➞Threads.net</p>
+        <p class="fancy word threads">Threads</p>
       </a>
-      
+      <a href="https://dev.to/olahbarbershop" target="_blank">
+        <p class="fancy word dev">DEV</p>
+      </a>
     </div>
 </div>
