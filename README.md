@@ -22,8 +22,7 @@ Home page:
 - A placeholder for now (Neumorphism. Nice. Useless, but nice.)
 
 Contacts page:
-- Won't be changing any time soon
-- ~~Maybe I should add our [Threads](https://threads.net/@olahbarbershop). I'll think about it~~ Done✅
+- Where you can reach us
 
 Services page:
 - What we offer
