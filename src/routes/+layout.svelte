@@ -9,7 +9,7 @@
 
   const menuEffect = (selector, intervalTime) => {
     document.querySelector(selector).onmouseover = event => {
-        let iterations = 0;
+        let iterations = 0
 
         const interval = setInterval(() => {
             event.target.innerText = event.target.innerText.split("")

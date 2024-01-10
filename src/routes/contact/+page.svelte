@@ -4,25 +4,25 @@
 
   const letterise = elclass => {
     const element = document.querySelector(elclass),
-          text = element.innerText.split("");
+          text = element.innerText.split("")
 
-    element.innerText = "";
+    element.innerText = ""
 
     text.forEach(letter => {
-      const span = document.createElement('span');
+      const span = document.createElement('span')
 
-      span.className = "letter";
-      span.innerText = letter;
+      span.className = "letter"
+      span.innerText = letter
 
-      element.appendChild(span);
-    });
-  };
+      element.appendChild(span)
+    })
+  }
 
   onMount(() => {
-    letterise(".email");
-    letterise(".insta");
-    letterise(".threads");
-    letterise(".dev");
+    letterise(".email")
+    letterise(".insta")
+    letterise(".threads")
+    letterise(".dev")
   })
 </script>
 
