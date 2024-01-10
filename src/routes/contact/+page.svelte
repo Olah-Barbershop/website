@@ -94,26 +94,4 @@
     {:else}
       <p>Loading...</p>
     {/if}
-    <script>
-    const letterise = elclass => {
-    const elements = document.querySelectorAll(elclass)
-
-    for(const element of elements) {
-      const text = element.innerText.split("")
-
-      element.innerText = ""
-
-      text.forEach(letter => {
-        const span = document.createElement('span')
-
-        span.className = "letter"
-        span.innerText = letter
-
-        element.appendChild(span)
-      })
-    }
-  }
-
-      letterise('.fancy')
-    </script>
 </div>
