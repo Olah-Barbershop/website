@@ -13,7 +13,7 @@
 
   onMount(async () => {
     try {
-      const results = await fetch('https://olahbarbershop.codes/services')
+      const results: Response = await fetch('https://olahbarbershop.codes/services')
       if (!results.ok) {
         throw new Error('Network respone was not OK');
       }

@@ -5,11 +5,11 @@
   import { base } from '$app/paths'
   import { navigating } from '$app/stores'
 
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-  const menuEffect = (selector, intervalTime) => {
+  const menuEffect = (selector: string, intervalTime: number) => {
     document.querySelector(selector).onmouseover = event => {
-        let iterations = 0
+        let iterations: number = 0
 
         const interval = setInterval(() => {
             event.target.innerText = event.target.innerText.split("")
@@ -36,7 +36,7 @@
     menuEffect('.locations', 25)
   })
 
-  let checked: Boolean
+  let checked: boolean
 
   const closeCheckBox = () => {
     checked ? checked = false : true
@@ -44,10 +44,10 @@
 
   $: if($navigating) closeCheckBox()
 
-  const home = base + '/'
-  const contact = base + '/contact'
-  const services = base + '/services'
-  const locations = base + '/locations'
+  const home: string = base + '/'
+  const contact: string = base + '/contact'
+  const services: string = base + '/services'
+  const locations: string = base + '/locations'
 </script>
 
 <svelte:head>

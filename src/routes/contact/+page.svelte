@@ -3,11 +3,11 @@
   import '$lib/assets/css/contact.scss'
 
   const letterise = (element: HTMLElement) => {
-      const text = element.innerText.split("")
+      const text: string[] = element.innerText.split("")
 
       element.innerText = ""
 
-      text.forEach(letter => {
+      text.forEach((letter: string) => {
         const span = document.createElement('span')
 
         span.className = "letter"
@@ -32,7 +32,7 @@
 
   onMount(async () => {
     try {
-      const results = await fetch('https://olahbarbershop.codes/contacts')
+      const results: Response = await fetch('https://olahbarbershop.codes/contacts')
       if(!results.ok) {
         throw new Error('Network response was not OK.')
       }
