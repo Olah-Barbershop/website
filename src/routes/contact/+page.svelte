@@ -2,10 +2,7 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/contact.scss'
 
-  const letterise = elclass => {
-    const elements = document.querySelectorAll(elclass)
-
-    for(const element of elements) {
+  const letterise = (element: HTMLElement) => {
       const text = element.innerText.split("")
 
       element.innerText = ""
@@ -18,7 +15,6 @@
 
         element.appendChild(span)
       })
-    }
   }
 
   type Contact = {
@@ -27,9 +23,6 @@
   }
 
   type Line = {
-    /**
-     * Left contact
-     */
     left: Contact,
     right: Contact
   }
@@ -52,22 +45,6 @@
   </script>
 
  <div class="text">
-        <!--div class="line">
-      <a href="mailto:contact@olahbarbershop.codes" target="_blank">
-        <p class="fancy word email">Email</p>
-      </a>
-      <a href="https://instagram.com/olahbarbershop" target="_blank">
-        <p class="fancy word insta">Insta</p>
-      </a>
-    </div>
-    <div class="line">
-      <a href="https://threads.net/@olahbarbershop" target="_blank">
-        <p class="fancy word threads">Threads</p>
-      </a>
-      <a href="https://dev.to/olahbarbershop" target="_blank">
-        <p class="fancy word dev">DEV</p>
-      </a>
-    </div-->
     {#if lines}
       <div class="line">
         <p class="word normal">This</p>
@@ -81,14 +58,13 @@
       {#each lines as { left, right }}
         <div class="line">
           <a href={left.link} target="_blank">
-            <p class={"fancy word " + left.name}>{left.name}</p>
+            <p use:letterise class={"fancy word " + left.name}>{left.name}</p>
           </a>
           <a href={right.link} target="_blank">
-            <p class={"fancy word " + right.name}>{right.name}</p>
+            <p use:letterise class={"fancy word " + right.name}}>{right.name}</p>
           </a>
         </div>
       {/each}
-      {void letterise('.fancy') ?? ""}
     {:else if error}
       <p>{error.message}</p>
     {:else}
