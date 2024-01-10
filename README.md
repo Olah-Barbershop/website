@@ -21,8 +21,8 @@ General:
 Home page:
 - A placeholder for now (Neumorphism. Nice. Useless, but nice.)
 
-Contacts page:
-- Where you can reach us
+Contact page:
+- All the way to reach and follow us
 
 Services page:
 - What we offer
