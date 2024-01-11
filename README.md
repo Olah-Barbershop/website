@@ -30,31 +30,21 @@ Services page:
 Locations page:
 - Our locations listed in a nice, modular format
 
-# Running, building
-
-First, clone the site
+# Running / Building locally
 ```sh
 git clone https://github.com/Olah-Barbershop/website
 cd website
-```
-
-Next, install the dependencies (assuming you have Node.js>=18 installed)
-```sh
 pnpm install
 ```
 
-Now, you can either run the site in development mode
+## Running
 ```sh
-pnpm run dev --open 
+pnpm run dev --open
 ```
 
-Or build it into a static site
+## Building
 ```sh
 pnpm run build
-```
-
-And preview it in your browser
-```sh
 pnpm run preview --open
 ```
 
