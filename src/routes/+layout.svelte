@@ -58,7 +58,7 @@
 <header>
   <nav>
     <ul class="nav-bar">
-     <li class="logo"><img src={icon} alt="logo"></li>
+     <li class="logo"><a href={home}><img src={icon} alt="logo"></a></li>
       <input type="checkbox" id="check" bind:checked>
       <span class="menu">
         <li><a href={home} class="home" data-value="Home">Home</a></li>
