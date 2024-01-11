@@ -22,7 +22,7 @@ Home page:
 - A placeholder for now (Neumorphism. Nice. Useless, but nice.)
 
 Contact page:
-- All the way to reach and follow us
+- All the ways to reach, follow, and interact with us
 
 Services page:
 - What we offer
