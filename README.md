@@ -40,22 +40,22 @@ cd website
 
 Next, install the dependencies (assuming you have Node.js>=18 installed)
 ```sh
-npm install
+pnpm install
 ```
 
 Now, you can either run the site in development mode
 ```sh
-npm run dev -- --open 
+pnpm run dev --open 
 ```
 
 Or build it into a static site
 ```sh
-npm run build
+pnpm run build
 ```
 
 And preview it in your browser
 ```sh
-npm run preview -- --open
+pnpm run preview --open
 ```
 
 **IMPORTANT** If you're building the site, and **not** serving it from your root directory, you must create a `.env` file before building and add the absolute path that your build is served from, e.g. "/website" if you're serving from example.com/website
