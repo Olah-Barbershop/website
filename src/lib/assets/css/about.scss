@@ -6,11 +6,11 @@ $max-font: 32px;
   width: 80vw;
   font-size: clamp($min-font, $desired-font, $max-font);
   line-height: 1.4;
-
-  ul {
-    list-style-position: inside;
-  }
   overflow: scroll;
   height: calc(90dvh - 8dvh);
   padding: 20px 0;
+  
+  ul {
+    list-style-position: inside;
+  }
 }
