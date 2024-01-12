@@ -30,6 +30,9 @@ Services page:
 Locations page:
 - Our locations listed in a nice, modular format
 
+About page:
+- The *About us* section. Nothing special
+
 # Running / Building locally
 ```sh
 git clone https://github.com/Olah-Barbershop/website
