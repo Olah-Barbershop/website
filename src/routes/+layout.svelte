@@ -34,6 +34,7 @@
     menuEffect('.contact', 30)
     menuEffect('.services', 25)
     menuEffect('.locations', 25)
+    menuEffect('.about', 50)
   })
 
   let checked: boolean
@@ -45,6 +46,7 @@
   $: if($navigating) closeCheckBox()
 
   const home: string = base + '/'
+  const about: string = base + '/about' 
   const contact: string = base + '/contact'
   const services: string = base + '/services'
   const locations: string = base + '/locations'
@@ -61,9 +63,10 @@
       <input type="checkbox" id="check" bind:checked>
       <span class="menu">
         <li><a href={home} class="home" data-value="Home">Home</a></li>
-        <li><a href={contact} class="contact" data-value="Contact">Contact</a></li>
         <li><a href={services} class="services" data-value="Services">Services</a></li>
         <li><a href={locations} class="locations" data-value="Locations">Locations</a></li>
+        <li><a href={contact} class="contact" data-value="Contact">Contact</a></li>
+        <li><a href={about} class="about" data-value="About">About</a></li>
         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </span>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>

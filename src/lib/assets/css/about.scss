@@ -1,0 +1,16 @@
+$min-font: 16px;
+$desired-font: 2.1vh;
+$max-font: 32px;
+
+.content {
+  width: 80vw;
+  font-size: clamp($min-font, $desired-font, $max-font);
+  line-height: 1.4;
+
+  ul {
+    list-style-position: inside;
+  }
+  overflow: scroll;
+  height: calc(90dvh - 8dvh);
+  padding: 20px 0;
+}
