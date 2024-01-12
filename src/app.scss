@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
+$min-font: 16px;
+$desired-font: 2vh;
+$max-font: 32px;
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -57,7 +61,7 @@ body {
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: clamp($min-font, $desired-font, $max-font);
 }
 
 .open-menu , .close-menu {
