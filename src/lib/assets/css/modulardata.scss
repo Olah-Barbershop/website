@@ -2,16 +2,6 @@ $max-font: 32px;
 $min-font: 16px;
 $desired-font: 1vw;
 
-.container {
-  height: calc(90dvh - 8dvh);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-  z-index: 100;
-}
-
 .location-container, .service-container {
   padding: 0 12vw;
   display: grid;
