@@ -115,6 +115,16 @@ body {
   #check:checked ~ .menu {right: 0;}
 }
 
+.copyright {
+  color: #121212;
+  position: absolute;
+  left: 50%;
+  bottom: 4dvh;
+  z-index: 400;
+  transform: translate(-50%, 50%);
+  font-size: clamp($min-font, $desired-font, $max-font);
+}
+
 .wave {
   background-color: transparent;
   position: absolute;

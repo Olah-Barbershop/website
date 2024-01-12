@@ -50,6 +50,8 @@
   const contact: string = base + '/contact'
   const services: string = base + '/services'
   const locations: string = base + '/locations'
+
+  const copyright: string = `\u00A9 ${new Date().getFullYear()} Oláh Barbershop` 
 </script>
 
 <svelte:head>
@@ -79,3 +81,4 @@
 <div class="wave wave1"></div>
 <div class="wave wave2"></div>
 <div class="wave wave3"></div>
+<div class="copyright">{copyright}</div>
