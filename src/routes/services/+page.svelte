@@ -24,6 +24,10 @@
   })
 </script>
 
+<svelte:head>
+  <title>Services</title>
+</svelte:head>
+
 <div class="container">
   {#if services}
     <div class="service-container">

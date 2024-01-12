@@ -41,33 +41,36 @@
       error = err
     }
   })
+</script>
 
-  </script>
+<svelte:head>
+  <title>Contact us</title>
+</svelte:head>
 
- <div class="text">
-    {#if lines}
+<div class="text">
+  {#if lines}
+    <div class="line">
+      <p class="word normal">This</p>
+      <p class="word normal">Is</p>
+      <p class="word normal">Your</p>
+    </div>
+    <div class="line">
+      <p class="word normal">Barbershop</p>
+      <p class="word normal">▼</p>
+    </div>
+    {#each lines as { left, right }}
       <div class="line">
-        <p class="word normal">This</p>
-        <p class="word normal">Is</p>
-        <p class="word normal">Your</p>
+        <a href={left.link} target="_blank">
+          <p use:letterise class={"fancy word " + left.name}>{left.name}</p>
+        </a>
+        <a href={right.link} target="_blank">
+          <p use:letterise class={"fancy word " + right.name}}>{right.name}</p>
+        </a>
       </div>
-      <div class="line">
-        <p class="word normal">Barbershop</p>
-        <p class="word normal">▼</p>
-      </div>
-      {#each lines as { left, right }}
-        <div class="line">
-          <a href={left.link} target="_blank">
-            <p use:letterise class={"fancy word " + left.name}>{left.name}</p>
-          </a>
-          <a href={right.link} target="_blank">
-            <p use:letterise class={"fancy word " + right.name}}>{right.name}</p>
-          </a>
-        </div>
-      {/each}
-    {:else if error}
-      <p>{error.message}</p>
-    {:else}
-      <p>Loading...</p>
-    {/if}
+    {/each}
+  {:else if error}
+    <p>{error.message}</p>
+  {:else}
+    <p>Loading...</p>
+  {/if}
 </div>

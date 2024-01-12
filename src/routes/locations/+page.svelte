@@ -24,8 +24,11 @@
       error = err
     }
   })
-
 </script>
+
+<svelte:head>
+  <title>Our locations</title>
+</svelte:head>
 
 <div class="container">
   {#if locations}
