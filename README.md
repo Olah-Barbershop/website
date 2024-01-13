@@ -11,11 +11,10 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fweb.olahbarbershop.codes)](https://web.olahbarbershop.codes)
 
 # Bugs and feature requests
-Either create an [issue](https://github.com/Olah-Barbershop/website/issues/new/choose), or a [pull request](https://github.com/Olah-Barbershop/website/pulls)
+Create an [issue](https://github.com/Olah-Barbershop/website/issues/new/choose), or open a [pull request](https://github.com/Olah-Barbershop/website/pulls)
 
 # Content, features
 General:
-- Responsive Web Design, or RWD for short. If something's not responsive, refer to the [Bugs and feature requests](#bugs-and-feature-requests) section.
 - General wave animation at the bottom to give it some life
 
 Home page:
