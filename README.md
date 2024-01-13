@@ -3,7 +3,7 @@
     <h1 align="center">Oláh Barbershop website</h1>
 </p>
 
-#### The official website for Oláh Barbershop, built using SvelteKit, hosted by [GitHub Pages](https://web.olahbarbershop.codes)
+#### The official website for Oláh Barbershop, built using [SvelteKit](https://kit.svelte.dev), hosted by [GitHub Pages](https://pages.github.com)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) &nbsp;
 [![GitHub Release](https://img.shields.io/github/v/release/Olah-Barbershop/website)](https://github.com/Olah-Barbershop/website/releases/latest) &nbsp;
