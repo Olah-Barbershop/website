@@ -3,12 +3,12 @@
 </script>
 
 <svelte:head>
-  <title>About us</title>
+  <title>About Us</title>
 </svelte:head>
 
 <div class="container">
   <div class="content">
-  <h1>About us</h1>
+  <h1>About Us</h1>
   <br>
   <p>Hey there! Welcome to Oláh Barbershop, where style meets tradition. This is not just a regular barbershop – <b>this is <ins>your</ins></b> barbershop, dedicated to keeping <i>you</i> sharp and stylish.</p>
   <br>
