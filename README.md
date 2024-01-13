@@ -15,7 +15,7 @@ Create an [issue](https://github.com/Olah-Barbershop/website/issues/new/choose),
 
 # Content, features
 General:
-- General wave animation at the bottom to give it some life
+- Simple wave animation at the bottom to give it some life
 
 Home page:
 - A placeholder for now (Neumorphism. Nice. Useless, but nice.)
