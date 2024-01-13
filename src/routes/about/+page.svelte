@@ -10,7 +10,7 @@
   <div class="content">
   <h1>About us</h1>
   <br>
-  <p>Hey there! Welcome to Oláh Barbershop, where style meets tradition. This is not just your regular barbershop – <b>this is <ins>your</ins></b> barbershop, dedicated to keeping <i>you</i> sharp and stylish.</p>
+  <p>Hey there! Welcome to Oláh Barbershop, where style meets tradition. This is not just a regular barbershop – <b>this is <ins>your</ins></b> barbershop, dedicated to keeping <i>you</i> sharp and stylish.</p>
   <br>
   <h3>Who We Are:</h3>
   <p>At Oláh Barbershop, we believe that a haircut is more than just a trim; it's an <del>adventure</del> experience. Our team of skilled barbers is passionate about their craft, ensuring that each visit is not just about getting a haircut, but about enjoying the whole grooming journey as well.</p>
