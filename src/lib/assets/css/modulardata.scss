@@ -6,10 +6,10 @@ $desired-font: 1vw;
   padding: 0 12vw;
   display: grid;
   grid-template-columns: repeat(3, minmax(calc(76vw / 3), 1fr));
-  overflow: scroll;
   height: calc(90dvh - 8dvh);
   align-items: center;
   justify-items: center;
+  overflow: auto;
 }
 
 .location-container {
