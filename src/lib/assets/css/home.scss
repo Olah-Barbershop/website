@@ -1,0 +1,16 @@
+$min-font: 16px;
+$desired-font: 5.5vw;
+$max-font: 50px;
+
+.main {
+  text-align: center;
+
+  h1 {
+    font-weight: normal;
+    font-size: clamp($min-font, $desired-font, $max-font);
+  }
+
+  b {
+    font-weight: bold;
+  }
+}
