@@ -18,7 +18,7 @@ General:
 - Simple wave animation at the bottom to give it some life
 
 Home page:
-- A placeholder for now (Neumorphism. Nice. Useless, but nice.)
+- A kind of intro message, since I had no idea what to put here
 
 Contact page:
 - All the ways to reach, follow, and interact with us
