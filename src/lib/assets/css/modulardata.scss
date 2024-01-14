@@ -10,6 +10,12 @@ $desired-font: 1vw;
   align-items: center;
   justify-items: center;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.location-container::-webkit-scrollbar, .service-container::-webkit-scrollbar {
+  display: none;
 }
 
 .location-container {
