@@ -9,8 +9,14 @@ $max-font: 32px;
   overflow: scroll;
   height: calc(90dvh - 8dvh);
   padding: 20px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   
   ul {
     list-style-position: inside;
   }
+}
+
+.content::-webkit-scrollbar {
+  display: none;
 }

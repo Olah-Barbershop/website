@@ -1,6 +1,6 @@
 {
   "name": "olahbarbershop-website",
-  "version": "1.10.4",
+  "version": "1.10.5",
   "description": "The website of Oláh Barbershop, made using SvelteKit.",
   "author": "pml68",
   "license": "GPL-3.0",
