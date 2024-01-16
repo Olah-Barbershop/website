@@ -10,13 +10,13 @@ assignees: ''
 As in, "Non-responsive element" or "Build fails", "404 error" etc.
 
 **Describe the bug**
-If u can't describe it, then leave.
+If you can't describe it, then leave.
 
 **How to reproduce it**
 If it happened during a certain action, how exactly?
 
 **Expected behavior**
-Describe what did expected to happen.
+Describe what you expected to happen.
 
 **Actual behavior**
 Describe what actually happened.
