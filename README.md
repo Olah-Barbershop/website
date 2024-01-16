@@ -41,13 +41,13 @@ pnpm install
 
 ## Running
 ```sh
-pnpm run dev --open
+pnpm dev --open
 ```
 
 ## Building
 ```sh
-pnpm run build
-pnpm run preview --open
+pnpm build
+pnpm preview --open
 ```
 
 **IMPORTANT** If you're building the site and **not** serving it from your root directory, add the absolute path that your build is served from to a `.env` file, e.g. "/website" if you're serving from example.com/website
