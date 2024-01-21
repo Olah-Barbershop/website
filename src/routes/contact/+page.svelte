@@ -30,7 +30,7 @@
   let lines: Line[]
   let error: Error
 
-  onMount(async () => {
+  const getLines = async () => {
     try {
       const results: Response = await fetch('https://olahbarbershop.codes/contacts')
       if(!results.ok) {
@@ -40,7 +40,9 @@
     } catch (err) {
       error = err
     }
-  })
+  }
+
+  onMount(getLines)
 </script>
 
 <svelte:head>

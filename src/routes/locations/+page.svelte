@@ -13,7 +13,7 @@
   let locations: Location[]
   let error: Error
 
-  onMount(async () => {
+  const getLocations = async () => {
     try {
       const results: Response = await fetch('https://olahbarbershop.codes/locations')
       if(!results.ok) {
@@ -23,7 +23,9 @@
     } catch (err) {
       error = err
     }
-  })
+  }
+
+  onMount(getLocations)
 </script>
 
 <svelte:head>

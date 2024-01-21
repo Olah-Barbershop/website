@@ -11,7 +11,7 @@
   let services: Service[]
   let error: Error
 
-  onMount(async () => {
+  const getServices = async () => {
     try {
       const results: Response = await fetch('https://olahbarbershop.codes/services')
       if (!results.ok) {
@@ -21,7 +21,9 @@
     } catch (err) {
       error = err
     }
-  })
+  }
+
+  onMount(getServices)
 </script>
 
 <svelte:head>
