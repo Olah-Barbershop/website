@@ -2,6 +2,8 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/contact.scss'
 
+  const baseURL = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+
   const letterise = (element: HTMLElement) => {
       const text: string[] = element.innerText.split("")
 
@@ -32,7 +34,7 @@
 
   const getLines = async () => {
     try {
-      const results: Response = await fetch('https://olahbarbershop.codes/contactinfo')
+      const results: Response = await fetch(baseURL + '/contactinfo')
       if(!results.ok) {
         throw new Error('Network response was not OK.')
       }

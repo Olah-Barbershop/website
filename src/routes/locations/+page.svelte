@@ -2,6 +2,8 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/modulardata.scss'
 
+  const baseURL = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+
   type Location = {
     address: string,
     phoneNumber: string,
@@ -15,7 +17,7 @@
 
   const getLocations = async () => {
     try {
-      const results: Response = await fetch('https://olahbarbershop.codes/locations')
+      const results: Response = await fetch(baseURL + '/locations')
       if(!results.ok) {
         throw new Error('Network response was not OK')
       }
