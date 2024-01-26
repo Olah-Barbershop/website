@@ -39,6 +39,13 @@ cd website
 pnpm install
 ```
 
+### OPTIONAL: The default API URL is "https://olahbarbershop.codes"; however, this can be changed
+
+#### In the `.env` file, create the `VITE_BASE_URL` variable
+```env
+VITE_BASE_URL=[the base URL of your API instance]
+```
+
 ## Running
 ```sh
 pnpm dev --open
