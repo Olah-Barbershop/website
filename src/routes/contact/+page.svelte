@@ -46,7 +46,7 @@
 </script>
 
 <svelte:head>
-  <title>Contact us</title>
+  <title>Contact Us</title>
 </svelte:head>
 
 <div class="text">
