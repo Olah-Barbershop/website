@@ -32,7 +32,7 @@
 
   const getLines = async () => {
     try {
-      const results: Response = await fetch('https://olahbarbershop.codes/contacts')
+      const results: Response = await fetch('https://olahbarbershop.codes/contactinfo')
       if(!results.ok) {
         throw new Error('Network response was not OK.')
       }
