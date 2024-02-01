@@ -24,7 +24,7 @@ $desired-font: 1vw;
 
 .service {
   margin: 30px 15px;
-  font-size: clamp($min-font, $desired-font, $max-font) !important;
+  font-size: clamp($min-font, $desired-font, $max-font);
   padding: 10px;
   padding-top: 25px;
   display: inline-block;
