@@ -1,13 +1,13 @@
 <script lang="ts">
-  import icon from '$lib/assets/icon.png'
   import '../app.scss'
+  import icon from '$lib/assets/icon.png'
   import { base } from '$app/paths'
   import { navigating } from '$app/stores'
 
   const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-  const menuEffect = (selector: string, intervalTime: number) => {
-    document.querySelector(selector).onmouseover = event => {
+  const menuEffect: Function = (element: HTMLElement, intervalTime: number) => {
+    element.onmouseover = (event: Event) => {
         let iterations: number = 0
 
         const interval = setInterval(() => {
@@ -30,7 +30,7 @@
 
   let checked: boolean
 
-  const closeCheckBox = () => {
+  const closeCheckBox: Function = () => {
     checked ? checked = false : true
   }
 
