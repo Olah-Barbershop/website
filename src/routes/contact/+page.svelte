@@ -2,15 +2,15 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/contact.scss'
 
-  const baseURL = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+  const baseURL: string = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
 
-  const letterise = (element: HTMLElement) => {
+  const letterise: Function = (element: HTMLElement) => {
       const text: string[] = element.innerText.split("")
 
       element.innerText = ""
 
       text.forEach((letter: string) => {
-        const span = document.createElement('span')
+        const span: HTMLElement = document.createElement('span')
 
         span.className = "letter"
         span.innerText = letter

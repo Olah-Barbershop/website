@@ -2,7 +2,7 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/modulardata.scss'
 
-  const baseURL = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+  const baseURL: string = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
 
   type Service = {
     name: string,
@@ -13,7 +13,7 @@
   let services: Service[]
   let error: Error
 
-  const getServices = async () => {
+  const getServices: Function = async () => {
     try {
       const results: Response = await fetch(baseURL + '/services')
       if (!results.ok) {
