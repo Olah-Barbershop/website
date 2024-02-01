@@ -30,11 +30,11 @@
   }
 
   onMount(() => {
-    menuEffect('.home', 60)
+    menuEffect('.home', 52)
     menuEffect('.contact', 30)
-    menuEffect('.services', 25)
-    menuEffect('.locations', 25)
-    menuEffect('.about', 50)
+    menuEffect('.services', 26)
+    menuEffect('.locations', 23)
+    menuEffect('.about', 42)
   })
 
   let checked: boolean
