@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte"
   import '$lib/assets/css/modulardata.scss'
-  import icon from '$lib/assets/scissors-solid.svg'
+  import scissorsIcon from '$lib/assets/scissors-solid.svg'
 
   const baseURL: string = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
 
@@ -39,7 +39,7 @@
       {#each services as { name, description, amount }}
         <div class="service">
           <p>
-            <img class="service-icon" src={icon} alt="Scissors">
+            <img class="service-icon" src={scissorsIcon} alt="Scissors">
           </p>
           <br>
           <p>

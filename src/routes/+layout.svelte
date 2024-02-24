@@ -1,6 +1,8 @@
 <script lang="ts">
   import '../app.scss'
   import icon from '$lib/assets/icon.png'
+  import timesIcon from '$lib/assets/xmark-solid.svg'
+  import barsIcon from '$lib/assets/bars-solid.svg'
   import { base } from '$app/paths'
   import { navigating } from '$app/stores'
 
@@ -65,9 +67,9 @@
         <li><a use:menuEffect={23} href={locations} class="locations" data-value="Locations">Locations</a></li>
         <li><a use:menuEffect={30} href={contact} class="contact" data-value="Contact">Contact</a></li>
         <li><a use:menuEffect={42} href={about} class="about" data-value="About">About</a></li>
-        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        <label for="check" class="close-menu"><img src={timesIcon} alt="Close menu"></label>
       </span>
-      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      <label for="check" class="open-menu"><img src={barsIcon} alt="Open menu"></label>
     </ul>
   </nav>
 </header>

@@ -74,6 +74,10 @@ body {
   font-size: clamp($min-font, $desired-font, $max-font);
 }
 
+.nav-bar label img {
+  width: calc(clamp($min-font, $desired-font, $max-font) * 1.1);
+} 
+
 .open-menu , .close-menu {
   position: absolute;
   color: #fff;
