@@ -3,7 +3,7 @@
   import '$lib/assets/css/modulardata.scss'
   import scissorsIcon from '$lib/assets/scissors-solid.svg'
 
-  const baseURL: string = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+  const baseURL: string = import.meta.env.VITE_BASE_URL || 'https://olahbarbershop.codes'
 
   type Service = {
     name: string,

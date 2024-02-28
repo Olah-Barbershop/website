@@ -2,7 +2,7 @@
   import { onMount } from "svelte"
   import '$lib/assets/css/modulardata.scss'
 
-  const baseURL: string = import.meta.env.VITE_BASE_URL ? import.meta.env.VITE_BASE_URL : 'https://olahbarbershop.codes'
+  const baseURL: string = import.meta.env.VITE_BASE_URL || 'https://olahbarbershop.codes'
 
   type Location = {
     address: string,
