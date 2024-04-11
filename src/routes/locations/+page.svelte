@@ -6,10 +6,10 @@
 
   type Location = {
     address: string,
-    phoneNumber: string,
-    mondayToThursday: string,
+    phone_number: string,
+    monday_to_thursday: string,
     friday: string,
-    saturdayToSunday: string
+    saturday_to_sunday: string
   }
 
   let locations: Location[]
@@ -37,23 +37,23 @@
 <div class="container">
   {#if locations}
     <div class="location-container">
-      {#each locations as { address, phoneNumber, mondayToThursday, friday, saturdayToSunday }}
+      {#each locations as { address, phone_number, monday_to_thursday, friday, saturday_to_sunday }}
         <div class="location">
           <p>{address}</p>
-          <p>{phoneNumber}</p>
+          <p>{phone_number}</p>
           <br>
           <p><strong>Business hours:</strong></p>
           <div class="business-hours-line">
-            <p>Monday to Thursday:&nbsp;&nbsp;</p>
-            <p>{mondayToThursday}</p>
+            <p>Monday to thursday:&nbsp;&nbsp;</p>
+            <p>{monday_to_thursday}</p>
           </div>
           <div class="business-hours-line">
             <p>Friday:&nbsp;&nbsp;</p>
             <p>{friday}</p>
           </div>
           <div class="business-hours-line">
-            <p>Saturday to Sunday:&nbsp;&nbsp;</p>
-            <p>{saturdayToSunday}</p>
+            <p>Saturday to sunday:&nbsp;&nbsp;</p>
+            <p>{saturday_to_sunday}</p>
           </div>
         </div>
       {/each}
