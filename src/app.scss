@@ -17,16 +17,9 @@ body {
   min-height: 100dvh;
 }
 
-.ii {
-  width: 20vh;
-  height: 20vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #121212;
-  border-radius: 2vh;
-  box-shadow: -12px -12px 28px #20202073, 12px 12px 20px #00000073;
+img {
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .container {

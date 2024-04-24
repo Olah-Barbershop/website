@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
+  import type ErrorResponse from '$lib/error.ts'
   import '$lib/assets/css/contact.scss'
 
   const baseURL: string = import.meta.env.VITE_BASE_URL || 'https://olahbarbershop.codes'
@@ -30,17 +31,18 @@
   }
 
   let lines: Line[]
-  let error: Error
+  let httpError: ErrorResponse
 
   const getLines = async () => {
     try {
       const results: Response = await fetch(baseURL + '/contactinfo')
       if(!results.ok) {
-        throw new Error('Network response was not OK.')
+        const httpError: ErrorResponse = await results.json()
+        throw httpError
       }
       lines = await results.json()
     } catch (err) {
-      error = err
+      httpError = err
     }
   }
 
@@ -72,8 +74,11 @@
         </a>
       </div>
     {/each}
-  {:else if error}
-    <p>{error.message}</p>
+  {:else if httpError}
+    <div class="error">
+      <p>{httpError["error"].status} - {httpError["error"].message}</p>
+      <br>
+      <a href="{httpError["error"].cat}"><img src={httpError["error"].cat} alt={httpError["error"].status + ' cat'}></a></div>
   {:else}
     <p>Loading...</p>
   {/if}

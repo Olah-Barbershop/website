@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
+  import type ErrorResponse from '$lib/error.ts'
   import '$lib/assets/css/modulardata.scss'
   import scissorsIcon from '$lib/assets/scissors-solid.svg'
 
@@ -12,17 +13,18 @@
   }
   
   let services: Service[]
-  let error: Error
+  let httpError: ErrorResponse
 
   const getServices: Function = async () => {
     try {
       const results: Response = await fetch(baseURL + '/services')
       if (!results.ok) {
-        throw new Error('Network respone was not OK');
+				const httpError: ErrorResponse = await results.json()
+				throw httpError
       }
       services = await results.json()
     } catch (err) {
-      error = err
+      httpError = err
     }
   }
 
@@ -54,8 +56,12 @@
         </div>
       {/each}
     </div>
-  {:else if error}
-    <p>{error.message}</p>
+  {:else if httpError}
+    <div class="error">
+      <p>{httpError["error"].status} - {httpError["error"].message}</p>
+      <br>
+      <a href={httpError["error"].cat}><img src={httpError["error"].cat} alt={httpError["error"].status + ' cat'}/></a>
+    </div>
   {:else}
     <p>Loading...</p>
   {/if}
