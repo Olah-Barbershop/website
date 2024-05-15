@@ -32,6 +32,9 @@ jobs:
         run: |
           pnpm build
 
+      - name: Generate sitemap
+        run: pnpm sitemap
+
       - name: Upload files
         uses: actions/upload-pages-artifact@v2
         with:
