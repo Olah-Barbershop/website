@@ -49,6 +49,8 @@
 
 <svelte:head>
   <meta name="google-site-verification" content="VSgLH2cb_vLXqlGC7dA2zyafU-AvTltrHtxnsXMeYSk" />
+  <meta name="description" content="The Oláh Barbershop website">
+
   <meta property="og:url" content="https://web.olahbarbershop.codes/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Oláh Barbershop">
