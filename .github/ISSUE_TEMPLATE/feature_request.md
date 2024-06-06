@@ -3,7 +3,7 @@ name: Feature request
 about: You want something new, something exciting!
 title: "[Feature]: "
 labels: "feature"
-assignees: ''
+assignees: 'pml68'
 ---
 
 **Type**
