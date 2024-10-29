@@ -30,8 +30,8 @@
     right: Contact
   }
 
-  let lines: Line[]
-  let httpError: ErrorResponse
+  let lines: Line[] = $state()
+  let httpError: ErrorResponse = $state()
 
   const getLines = async () => {
     try {
@@ -70,7 +70,7 @@
           <p use:letterise class={"fancy word " + left.name}>{left.name}</p>
         </a>
         <a href={right.link} target="_blank">
-          <p use:letterise class={"fancy word " + right.name}}>{right.name}</p>
+          <p use:letterise class={"fancy word " + right.name}>{right.name}</p>
         </a>
       </div>
     {/each}

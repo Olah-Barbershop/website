@@ -5,6 +5,11 @@
   import barsIcon from '$lib/assets/bars-solid.svg'
   import { base } from '$app/paths'
   import { navigating } from '$app/stores'
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
 
   const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -30,13 +35,13 @@
     }
   }
 
-  let checked: boolean
+  let checked: boolean = $state(false)
 
-  const closeCheckBox: Function = () => {
-    checked ? checked = false : true
-  }
-
-  $: if($navigating) closeCheckBox()
+  $effect(() => {
+    if ($navigating) {
+      checked = false
+    }
+  })
 
   const home: string = base + '/'
   const about: string = base + '/about' 
@@ -76,7 +81,7 @@
   </nav>
 </header>
 
-<slot />
+{@render children?.()}
 
 <div class="wave wave1"></div>
 <div class="wave wave2"></div>

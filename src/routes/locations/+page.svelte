@@ -13,8 +13,8 @@
     saturday_to_sunday: string
   }
 
-  let locations: Location[]
-  let httpError: ErrorResponse
+  let locations: Location[] = $state()
+  let httpError: ErrorResponse = $state()
 
   const getLocations: Function = async () => {
     try {

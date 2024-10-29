@@ -12,8 +12,8 @@
     amount: number
   }
   
-  let services: Service[]
-  let httpError: ErrorResponse
+  let services: Service[] = $state()
+  let httpError: ErrorResponse = $state()
 
   const getServices: Function = async () => {
     try {
